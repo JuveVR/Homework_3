@@ -1,3 +1,4 @@
+from math import sqrt
 #6.1
 def is_year_leap(year):
     """Checks if year is leap, and returns result"""
@@ -51,17 +52,19 @@ def triangle_type(a,b,c):
         return "Not a triangle"
 
 #6.6
+#First way
 def distance(x1,y1,x2,y2):
-    point1 = (x1,y1)
-    point2 = (x2,y2)
+    d1 = ((x2-x1)**2 + (y2 - y1)**2)**0.5
+    return d1
 
 
 
-# a = -7
-# b = -4
-#
-# c = a * b
-# print(c)
+
+#Second way using math module
+def distance_math(x1,y1,x2,y2):
+    d2 = sqrt((x2-x1)**2 + (y2 - y1)**2)
+    return d2
+
 
 
 
