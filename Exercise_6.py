@@ -9,8 +9,8 @@ def is_year_leap(year):
 
 #6.2
 def triangle_existance(a,b,c):
-    #Checks if the sum of any two arguments is bigger then the third one.
-    #If yes returns True? if no - False.
+    """Checks if the sum of any two arguments is bigger then the third one.
+    If yes returns True? if no - False."""
     if a < b + c and b < c + a and c < b + a:
         return True
     else:
@@ -18,8 +18,8 @@ def triangle_existance(a,b,c):
 
 #6.3
 def spaceless():
-    #Asks to enter the word without spaces, spaces in the beginning and the end are allowed.
-    #Function works until conditions are met and returns entered word.
+    """Asks to enter the word without spaces, spaces in the beginning and the end are allowed.
+    Function works until conditions are met and returns entered word."""
     while True:
         message = input("Enter message: ").strip()
         if " " not in message:
@@ -27,7 +27,7 @@ def spaceless():
 
 #6.4
 def number_request():
-    # Asks to enter the number until its done. Returns entered number.
+    """Asks to enter the number until its done. Returns entered number."""
     while True:
         num = input("Enter number: ")
         try:
@@ -40,10 +40,10 @@ def number_request():
 
 #6.5
 def triangle_type(a,b,c):
-    # Checks arguments correlation with triangle sides:
-    # if the sum of any two arguments is bigger then the third one returns "Isosceles triangle",
-    # If less - returns "Not a triangle"
-    # If all arguments are equal returns "Equilateral triangle"
+    """Checks arguments correlation with triangle sides:
+    If the sum of any two arguments is bigger then the third one returns "Isosceles triangle",
+    If less - returns "Not a triangle"
+    If all arguments are equal returns "Equilateral triangle\""""
     if a == b == c:
         return "Equilateral triangle"
     elif a < b + c and b < c + a and c < b + a:
