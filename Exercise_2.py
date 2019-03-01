@@ -12,5 +12,16 @@ elif length % 2 != 0:
     part1 = message[0:int(mediana)]
     part2 = message[int(mediana):]
 
+s = part2+part1
+print(s)
 
-print(part2+part1)
+#Easy way
+message = input("Enter any string: ")
+length = len(message)
+
+part1 = message[:len(message)/2]
+part2 = message[len(message)/2:]
+
+s = part2+part1
+
+print(s)

@@ -33,9 +33,10 @@ def number_request():
         try:
             num = float(num)
             return num
-        except:
+        except ValueError:
             pass
-
+        except Exception as e:
+            print(e, file=console_log.txt)
 
 
 #6.5
@@ -64,6 +65,7 @@ def distance(x1,y1,x2,y2):
 def distance_math(x1,y1,x2,y2):
     d2 = sqrt((x2-x1)**2 + (y2 - y1)**2)
     return d2
+
 
 
 

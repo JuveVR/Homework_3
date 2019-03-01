@@ -10,7 +10,8 @@ for i in s1:
     s2.append(i.strip('!.()'))
 
 print(s2)
-
-#print(s2.sort()) This function returns None, can't understand why
 print(sorted(s2))
+
+s2.sort()
+print(s2) # Yes, understand now :)
 

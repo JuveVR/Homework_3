@@ -4,6 +4,17 @@ while x in range(11):
     print(x)
     x +=1
 
+#with for and range
+x = 0
+for x in range(11):
+    print(x)
+
+#with while and <
+x = 0
+while x < 11:
+    print(x)
+    x += 1
+
 #3.2
 y = 20
 while y in range(20,0,-1):

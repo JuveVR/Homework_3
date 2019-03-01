@@ -7,7 +7,7 @@ try:
 except ValueError:
     print(value1+value2)
 
-#Second way, that doesn't allow to sum uo float numbers
+#Second way, that doesn't allow to sum up float numbers
 value3 = input("Please input first value: ")
 value4 = input("Please input second value: ")
 
