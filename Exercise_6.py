@@ -46,14 +46,17 @@ def triangle_type(a,b,c):
     If the sum of any two arguments is less then the third one returns - "Not a triangle"
     If all arguments are different returns "Versatile triangle"
     If all arguments are equal returns "Equilateral triangle\""""
-    if a == b == c:
-        return "Equilateral triangle"
-    elif a == b != c or b == c != a or c == a != b:
-        return "Isosceles triangle"
-    elif a != b and b != c and c != a:
-        return "Versatile triangle"
+    if a < b + c and b < c + a and c < b + a:
+        if a == b == c:
+            return "Equilateral triangle"
+        elif a == b != c or b == c != a or c == a != b:
+            return "Isosceles triangle"
+        elif a != b and b != c and c != a:
+            return "Versatile triangle"
+        else:
+            return "Not a triangle"
     else:
-        return "Not a triangle"
+        return "This triangle does not exist"
 
 #6.6
 #First way
