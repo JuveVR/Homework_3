@@ -16,7 +16,6 @@ while len(ls) >= 1:
 #first way with string
 s = "0123456789"
 ind = len(s)
-
 while ind  >= 1:
   if ind == len(s):
     print(s)

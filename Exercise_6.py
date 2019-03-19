@@ -42,13 +42,16 @@ def number_request():
 #6.5
 def triangle_type(a,b,c):
     """Checks arguments correlation with triangle sides:
-    If the sum of any two arguments is bigger then the third one returns "Isosceles triangle",
-    If less - returns "Not a triangle"
+    If any two sides are equal returns "Isosceles triangle",
+    If the sum of any two arguments is less then the third one returns - "Not a triangle"
+    If all arguments are different returns "Versatile triangle"
     If all arguments are equal returns "Equilateral triangle\""""
     if a == b == c:
         return "Equilateral triangle"
-    elif a < b + c and b < c + a and c < b + a:
+    elif a == b != c or b == c != a or c == a != b:
         return "Isosceles triangle"
+    elif a != b and b != c and c != a:
+        return "Versatile triangle"
     else:
         return "Not a triangle"
 
